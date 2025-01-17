@@ -21,5 +21,5 @@ POST localhost:8000/api/orders/create
 PUT localhost:8000/api/orders/678a120001246442d3ebeee4
 DELETE localhost:8000/api/orders/678a120001246442d3ebeee4
 
-PUT localhost:8000/api/orders/678a120001246442d3ebeee4/products/678a03fa7da6c58f585318bb
-PUT localhost:8000/api/orders/678a120001246442d3ebeee4/products/678a03fa7da6c58f585318bb
+PUT localhost:8000/api/orders/678a120001246442d3ebeee4/products/add/678a03fa7da6c58f585318bb
+PUT localhost:8000/api/orders/678a120001246442d3ebeee4/products/remove/678a03fa7da6c58f585318bb

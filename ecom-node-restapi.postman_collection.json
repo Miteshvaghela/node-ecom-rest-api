@@ -1,0 +1,416 @@
+{
+	"info": {
+		"_postman_id": "a775a39d-a18e-4826-8325-1efc456a04e1",
+		"name": "ecom-node-restapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15326861",
+		"_collection_link": "https://blue-trinity-174057.postman.co/workspace/Dye-and-durham-search-api~4f7870b9-4324-41bf-942e-3230922001d4/collection/15326861-a775a39d-a18e-4826-8325-1efc456a04e1?action=share&source=collection_link&creator=15326861"
+	},
+	"item": [
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "create new customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fullname",
+									"value": "mitesh kalidas vaghela",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "miteshvaghela",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "mitesh@site.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/customers",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/customers",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/customers/678a0032267da02b598b5ba3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customers",
+								"678a0032267da02b598b5ba3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "mitesh_update",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "mitesh_update@yahoo.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/customers/678a01e6e8c901962354703a",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"customers",
+								"678a01e6e8c901962354703a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "get product list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "third product",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1.99",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "updated name for product",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "9.99",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "500",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/products/678a0559b367a1e48e0117b8",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"678a0559b367a1e48e0117b8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/products/678a0559b367a1e48e0117b8",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"678a0559b367a1e48e0117b8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "get orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create new order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "customerName",
+									"value": "New customer1",
+									"type": "text"
+								},
+								{
+									"key": "customerEmail",
+									"value": "test@site.com",
+									"type": "text"
+								},
+								{
+									"key": "totalPrice",
+									"value": "299.99",
+									"type": "text"
+								},
+								{
+									"key": "customerAddress",
+									"value": "test address",
+									"type": "text"
+								},
+								{
+									"key": "products",
+									"value": "678a03fa7da6c58f585318bb, 678a0425c5fe42a032937b41",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/orders",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/orders/678a117a5a0cea3e25cce712",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"678a117a5a0cea3e25cce712"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update order",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "customerName",
+									"value": "Mitesh vaghela123",
+									"type": "text"
+								},
+								{
+									"key": "customerEmail",
+									"value": "test@yahoo.com",
+									"type": "text"
+								},
+								{
+									"key": "products",
+									"value": "678a0425c5fe42a032937b41",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/orders/678a120001246442d3ebeee4",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"678a120001246442d3ebeee4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add product to order",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/orders/678a120001246442d3ebeee4/products/add/678a03fa7da6c58f585318bb",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"678a120001246442d3ebeee4",
+								"products",
+								"add",
+								"678a03fa7da6c58f585318bb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove product from order",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
