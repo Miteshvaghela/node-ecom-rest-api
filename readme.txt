@@ -1,4 +1,4 @@
-Ecommerce application rest api 
+# Ecommerce application rest api 
 
 Customers api
 GET localhost:8000/api/customers
@@ -6,7 +6,7 @@ POST localhost:8000/api/customers/create
 PUT localhost:8000/api/customers/create/1
 DELETE localhost:8000/api/customers/1
 
-Product api 
+# Product api 
 
 GET localhost:8000/api/products
 POST localhost:8000/api/products/create
@@ -14,7 +14,7 @@ PUT localhost:8000/api/products/create/1
 DELETE localhost:8000/api/products/1
 
 
-Orders api 
+# Orders api 
 
 GET localhost:8000/api/orders
 POST localhost:8000/api/orders/create
